@@ -10,13 +10,18 @@ With bower:
 bower install jp-caricksel --save
 ```
 
-Add the jp-caricksel.js and jp-caricksel.css to your code.
+Add the `jp-caricksel.js` and `jp-caricksel.css` to your code.
 ```html
-<link rel="stylesheet" href="styles/main.css">
 <link rel="stylesheet" href="bower_components/jp-caricksel/lib/jp-caricksel.css" />
 <script src="bower_components/jp-caricksel/lib/jp-caricksel.js"></script>
 ```
 
+Add the `jp-caricksel` attribute to the div you want to make into a carousel.
+
+```html
+<div data-jp-caricksel>
+</div>
+```
 Register the module as and dependency on your application.
 
 ```js
@@ -73,4 +78,4 @@ Enjoy the ride!
 ##Todo:
  * Make tests...
  * Add lazy loading.
- * Abstract away the need of haven to calculate the image ratio by hand.
+ * Abstract away the need of have to calculate the image ratio by hand.
