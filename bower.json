@@ -5,7 +5,10 @@
     "Rick Heere <rickheere@gmail.com>"
   ],
   "description": "simple carousel for angularjs",
-  "main": "lib/jp-caricksel.js",
+  "main": [
+      "lib/jp-caricksel.js",
+      "lib/jp-caricksel.css"
+  ],
   "keywords": [
     "angular",
     "angularjs",

@@ -1,0 +1,100 @@
+div[jp-caricksel],
+div[data-jp-caricksel] {
+    position: relative;
+}
+
+div[jp-caricksel] div.imageContainer,
+div[data-jp-caricksel] div.imageContainer {
+    overflow: hidden;
+
+    position: relative;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+div[jp-caricksel] img.seat,
+div[data-jp-caricksel] img.seat {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+}
+
+div[jp-caricksel] div.ctrl,
+div[data-jp-caricksel] div.ctrl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+
+    cursor: pointer;
+    background: #ccc;
+    opacity: 0;
+}
+
+div[jp-caricksel] div.ctrl:hover,
+div[data-jp-caricksel] div.ctrl:hover {
+    opacity: 0.5;
+}
+
+div[jp-caricksel] div.ctrlLeft,
+div[data-jp-caricksel] div.ctrlLeft {
+    left: 0;
+}
+
+div[jp-caricksel] div.ctrlRight,
+div[data-jp-caricksel] div.ctrlRight {
+    right: 0;
+}
+
+div[jp-caricksel] div.ctrlRight:before,
+div[data-jp-caricksel] div.ctrlRight:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+
+    width: 0;
+	height: 0;
+    margin: auto;
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid #222;
+}
+
+div[jp-caricksel] div.ctrlLeft:before,
+div[data-jp-caricksel] div.ctrlLeft:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+
+    width: 0;
+	height: 0;
+    margin: auto;
+
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-right: 60px solid #222;
+}
