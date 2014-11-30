@@ -1,0 +1,32 @@
+{
+  "name": "jp-caricksel",
+  "version": "0.1.0",
+  "description": "A simple AngularJS carousel.",
+  "main": "''",
+  "scripts": {
+    "postinstall": "bower install",
+    
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js  --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rickheere/jp_caricksel.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rickheere/jp_caricksel/issues"
+  },
+  "homepage": "https://github.com/rickheere/jp_caricksel",
+  "devDependencies": {
+    "bower": "^1.3.1",
+    "jasmine-core": "^2.1.2",
+    "karma": "^0.12.28",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jasmine": "^0.3.2",
+    "karma-junit-reporter": "^0.2.2"
+  }
+}

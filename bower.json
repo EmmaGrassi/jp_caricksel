@@ -1,13 +1,13 @@
 {
   "name": "jp-caricksel",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "authors": [
     "Rick Heere <rickheere@gmail.com>"
   ],
-  "description": "simple carousel for angularjs",
+  "description": "Aimple carousel for angularjs",
   "main": [
-      "lib/jp-caricksel.js",
-      "lib/jp-caricksel.css"
+    "lib/jp-caricksel.js",
+    "lib/jp-caricksel.css"
   ],
   "keywords": [
     "angular",
@@ -18,7 +18,13 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
+    "npm_mobules",
+    "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "angular": "~1.3.4",
+    "angular-mocks": "~1.3.4"
+  }
 }

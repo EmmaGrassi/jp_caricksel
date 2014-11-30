@@ -73,9 +73,18 @@ div[data-jp-caricksel] div.imageContainer {
 }
 ```
 
+## Unit testing
+
+The easiest way to run the unit tests is to use the supplied npm script:
+```sh
+npm test
+```
+
+
 Enjoy the ride!
 
 ##Todo:
  * Make tests...
  * Add lazy loading.
  * Abstract away the need of have to calculate the image ratio by hand.
+ * Make it more Angular
