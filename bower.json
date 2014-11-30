@@ -1,0 +1,23 @@
+{
+  "name": "jp-caricksel",
+  "version": "0.0.0",
+  "authors": [
+    "Rick Heere <rickheere@gmail.com>"
+  ],
+  "description": "simple carousel for angularjs",
+  "main": "lib/jp-caricksel.js",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "caricksel",
+    "carousel"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
