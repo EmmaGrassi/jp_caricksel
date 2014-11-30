@@ -1,11 +1,11 @@
 {
   "name": "jp-caricksel",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple AngularJS carousel.",
   "main": "''",
   "scripts": {
     "postinstall": "bower install",
-    
+
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run"
