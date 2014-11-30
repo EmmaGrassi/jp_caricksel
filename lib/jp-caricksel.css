@@ -1,3 +1,4 @@
+
 div[jp-caricksel],
 div[data-jp-caricksel] {
     position: relative;
@@ -8,7 +9,6 @@ div[data-jp-caricksel] div.imageContainer {
     overflow: hidden;
 
     position: relative;
-    padding-top: 30px;
     height: 0;
     overflow: hidden;
     max-width: 100%;

@@ -1,6 +1,6 @@
 {
   "name": "jp-caricksel",
-  "version": "0.0.0",
+  "version": "0.0.4",
   "authors": [
     "Rick Heere <rickheere@gmail.com>"
   ],
@@ -18,8 +18,6 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
     "test",
     "tests"
   ]
