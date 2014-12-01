@@ -10,23 +10,37 @@ module.exports = function(config){
       'lib/jp-caricksel_test.js'
     ],
 
+    preprocessors: {
+        'lib/*.js': 'coverage'
+    },
+
     autoWatch : true,
 
     frameworks: ['jasmine'],
 
-    browsers : ['Chrome'],
+    browsers : ['PhantomJS'],
 
     plugins : [
         'karma-chrome-launcher',
         'karma-firefox-launcher',
         'karma-jasmine',
-        'karma-junit-reporter'
+        'karma-phantomjs-launcher',
+        'karma-junit-reporter',
+        'karma-coverage'
     ],
 
     junitReporter : {
-      outputFile: 'test_out/unit.xml',
-      suite: 'unit'
-    }
+        outputFile: 'test_out/unit.xml',
+        suite: 'unit'
+    },
 
+    reporters: [
+        'coverage'
+    ],
+
+    coverageReporter: {
+        type : 'html',
+        dir : 'coverage/'
+    }
   });
 };
