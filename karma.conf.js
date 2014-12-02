@@ -11,7 +11,7 @@ module.exports = function(config){
     ],
 
     preprocessors: {
-        'lib/*.js': 'coverage'
+        '**/lib/*.js': 'coverage'
     },
 
     autoWatch : true,
@@ -35,6 +35,7 @@ module.exports = function(config){
     },
 
     reporters: [
+        'progress',
         'coverage'
     ],
 
@@ -42,5 +43,5 @@ module.exports = function(config){
         type : 'html',
         dir : 'coverage/'
     }
-  });
+});
 };
