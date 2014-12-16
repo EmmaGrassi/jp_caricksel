@@ -1,47 +1,49 @@
-module.exports = function(config){
-  config.set({
+module.exports = function(config) {
+    config.set({
 
-    basePath : './',
+        basePath : './',
 
-    files : [
-      'bower_components/angular/angular.js',
-      'bower_components/angular-mocks/angular-mocks.js',
-      'lib/jp-caricksel.js',
-      'lib/jp-caricksel_test.js'
-    ],
+        files : [
+            'bower_components/angular/angular.js',
+            'bower_components/angular-mocks/angular-mocks.js',
+            'lib/jp-caricksel.js',
+            'lib/jp-caricksel_test.js'
+        ],
 
-    preprocessors: {
-        '**/lib/*.js': 'coverage'
-    },
+        preprocessors: {
+            '**/lib/*.js': 'coverage'
+        },
 
-    autoWatch : true,
+        logLevel : config.LOG_INFO,
 
-    frameworks: ['jasmine'],
+        autoWatch : true,
 
-    browsers : ['PhantomJS'],
+        frameworks: ['jasmine'],
 
-    plugins : [
-        'karma-chrome-launcher',
-        'karma-firefox-launcher',
-        'karma-jasmine',
-        'karma-phantomjs-launcher',
-        'karma-junit-reporter',
-        'karma-coverage'
-    ],
+        browsers : ['PhantomJS'],
 
-    junitReporter : {
-        outputFile: 'test_out/unit.xml',
-        suite: 'unit'
-    },
+        plugins : [
+            'karma-chrome-launcher',
+            'karma-firefox-launcher',
+            'karma-jasmine',
+            'karma-phantomjs-launcher',
+            'karma-junit-reporter',
+            'karma-coverage'
+        ],
 
-    reporters: [
-        'progress',
-        'coverage'
-    ],
+        junitReporter : {
+            outputFile: 'test_out/unit.xml',
+            suite: 'unit'
+        },
 
-    coverageReporter: {
-        type : 'html',
-        dir : 'coverage/'
-    }
-});
+        reporters: [
+            'progress',
+            'coverage'
+        ],
+
+        coverageReporter: {
+            type : 'html',
+            dir : 'coverage/'
+        }
+    });
 };
